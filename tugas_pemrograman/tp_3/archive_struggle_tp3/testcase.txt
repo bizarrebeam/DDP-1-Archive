@@ -1,0 +1,204 @@
+>> 1   
+    dataframe = read_csv("abalone.csv")
+
+    print(head(dataframe, top_n=10))
+    print()
+
+    new_dataframe = select_rows(dataframe, "Length", ">", 0.49)
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_cols(dataframe, ["Sex", "Length", "Diameter", "Rings"])
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    print("Rataan pada kolom Length =", mean_col(dataframe, "Length"))
+    print()
+
+    print(count(dataframe, "Sex"))
+    print()
+
+    scatter(dataframe, "Length", "Diameter")
+    print()
+
+
+>> 2
+    dataframe = read_csv("abalone.csv")
+    print(dataframe[1])
+    print()
+    print(dataframe[2])
+    print()
+    print(count(dataframe, "Rings"))
+    scatter(dataframe, "Length", "Diameter")
+    print("Rataan pada kolom Length = ", mean_col(dataframe, "Length"))
+    print(count(dataframe, "Rings"))
+    new_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+    print(count(dataframe, "Rings"))
+    scatter(dataframe, "Length", "Diameter")
+    print("Rataan pada kolom Length = ", mean_col(dataframe, "Length"))
+    print(count(dataframe, "Rings"))
+    new_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+
+    
+>> 3
+    dataframe = read_csv("abalone1.csv") # error gue di sini adalah gue ga handle data dgn empty value di rownya:)
+    new_dataframe1 = select_rows(dataframe, "Diameter", "<=", 0.1)
+    print(info(new_dataframe1))
+    print()
+    print(head(new_dataframe1, top_n=5))
+    print()
+
+    # attempt to convert value1 to the type of value bikin jd error karena ada yg float mw gue coba ke int (pembandingnya kan int, >1)
+    new_dataframe = select_rows(select_rows(dataframe, "Height", ">", 1), "Sex", "==", "M")
+    print(info(new_dataframe)) 
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_cols(dataframe, ["Sex", "Height", "Length", "Rings", "Rings", "Length", "Height", "Sex"])
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    # permasalahan empty string lagi gabisa handle mean nya
+    print("Rataan pada kolom Rings = ", mean_col(dataframe, "Rings"))
+    print()
+    print(count(dataframe, "Sex"))
+    print()
+
+    # masih pake new dataframe jdnya bermasalah emptystring jg
+    scatter(new_dataframe1, "Diameter", "Height")
+    print()
+
+
+>> 4
+    dataframe = read_csv("abalone.csv")
+
+    print(head(dataframe, top_n=10))
+    print()
+
+    new_dataframe = select_rows(dataframe, "Length", ">", 0.49)
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_cols(dataframe, ["Sex", "Length", "Diameter", "Rings"])
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    print("Rataan pada kolom Length = ", mean_col(dataframe, "Length"))
+    print()
+
+    print(count(dataframe, "Sex"))
+    print()
+
+    scatter(dataframe, "Length", "Diameter")
+    print()
+
+
+>> 5  
+    dataframe = read_csv("abalone.csv")
+    print(dataframe[1])
+    print()
+    print(dataframe[2])
+
+    dataframe = read_csv("abalone1.csv") # kena empty string lagi di row pas ngitung mean
+    new_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+    print(info(new_dataframe))
+    print()
+    print("Rataan pada kolom Rings = ", mean_col(dataframe, "Rings"))
+
+    print(count(dataframe, "Rings"))
+    scatter(dataframe, "Length", "Diameter")
+    print("Rataan pada kolom Length = ", mean_col(dataframe, "Lngth"))
+    print(count(dataframe, "Rings"))
+    new_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+    scatter(dataframe, "Diameter", "Rings")
+    print(count(dataframe, "Rings"))
+    scatter(dataframe, "Length", "Diameter")
+    print("Rataan pada kolom Length = ", mean_col(dataframe, "Lngth"))
+
+
+>> 6
+    dataframe = read_csv("abalone2.csv")
+    dataframe = read_csv("abalone1.csv")
+
+    new_dataframe1 = select_rows(dataframe, "Diameter", "<=", 0.1)
+    print(info(new_dataframe1))
+    print()
+    print(head(new_dataframe1, top_n=5))
+    print()
+
+    new_dataframe = select_rows(select_rows(dataframe, "Height", ">", 1), "Sex", "==", "M")
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_cols(dataframe, ["Sex", "Height", "Length", "Rings", "Rings", "Length", "Height", "Sex"])
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+    print("Rataan pada kolom Rings = ", mean_col(dataframe, "Rings"))
+    print()
+
+    print(count(dataframe, "Sex"))
+    print()
+
+    scatter(new_dataframe1, "Diameter", "Height")
+    print()
+
+
+>> 7
+    dataframe = read_csv("abalone.csv")
+
+    print(head(dataframe, top_n=10))
+    print()
+
+    new_dataframe = select_rows(dataframe, "Length", ">", 0.49)
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    new_dataframe = select_cols(dataframe, ["Sex", "Length", "Diameter", "Rings"])
+    print(info(new_dataframe))
+    print()
+    print(head(new_dataframe, top_n=5))
+    print()
+
+    print("Rataan pada kolom Length = ", mean_col(dataframe, "Length"))
+    print()
+
+    print(count(dataframe, "Sex"))
+    print()
+
+    scatter(dataframe, "Length", "Diameter")
+    print()

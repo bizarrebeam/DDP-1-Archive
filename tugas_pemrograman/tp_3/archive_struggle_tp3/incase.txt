@@ -1,0 +1,54 @@
+1. Gedean mana 1 atau 1.0
+    sama yh, float dan int pas dicoba di python baru returns True kalo perform equal operator
+
+2. Perbedaan set dict list
+    set: kaya himpunan, unordered dan mutable datatype, tp terbatas adding sama removing (karena gaada index nya).
+        set juga gabisa duplikat
+        set nerima immutable datatype tp dia sendiri mutable
+    dict: datatype yang punya key dan value, jadi indexnya sendiri berdasarkan key nya
+        mutable dan bisa duplikat (key) nya, terus keynya jg cm nerima immutable
+    list: ordered datatype berdasarkan index, mutable, bisa store berbagai object/datatype,
+        mau duplikat boleh, mutable immutable boleh
+
+3. gimana diagram matplotlib bekerja?
+    scatter plot itu salah satu fitur dari matplotlib, dan matplotlib sendiri adalah library
+    untuk visualisasi data. scatter plot sendiri itu 'plot' data ke grafik dua dimensi, di mana
+    dua dimensi diproyeksikan ke dua sumbu, yaitu sumbu y dan sumbu x
+    makanya, di function show scatter plot ini, parameternya adalah siapa sumbu x nya dan siapa
+    sumbu y nya,
+    di sini, manggil scatter plotnya pakai function plt.scatter() sama plt.x/ylabel() untuk nandain
+    nama label pas plot di grafiknya
+
+    jadi, cara kerja pada function ini dengan get 1st elemen dari tuple dataframe karena dia yg holds
+    data-datanya, di convert ke bentuk float. sebenernya scatter plot bisa langsung handle int/float, 
+    tp karena di dataframe in, di tiap kolom jenis datanya ada yg int uga, biar seragam aja diconvert ke float
+    apalagi most of datanya bentuknya float, jd biar desimalnya lebih presisi
+
+4. str bisa dicompare sama int ga?
+    bisa dicompare karena alphabet punya ascii value untuk tiap karakter
+    bisa dicompare pakai standard operator, nanti dicompare berdasarkan ascii valuesnya
+    ascii value int biasanya lebih kecil karena ascii alphabet terkecil aja yaitu a kecil udh dimulai dari 65
+    tp gabisa langsung dicompare dgn standard operator gt, ahrus pakai ord/chr untuk nyesuain
+
+5. cara convert list ke str
+    pakai join method karena dia concatenate element dari datatype yg iterable (list)
+    ke single string dan kita bisa spesifikin delimiternya
+    kalo misalnya ada 3 list, tinggal store tiap list nya ke variable, terus pas for loop nya bikin
+        list1 = ['apple', 'banana']
+        list2 = ['orange', 'grape']
+        list3 = ['cherry', 'kiwi']
+
+        result_string = ''  # Initialize an empty string
+
+        # Iterate over each list
+        for my_list in [list1, list2, list3]:
+            # Concatenate the elements of the current list to the result string
+            result_string += ', '.join(my_list)
+
+        print(result_string)
+
+6. masalah error karena empty string
+    jjur aja kalo primary fokus gue adalah passed abalone csv karena gue nganggepnya
+    program yang gue bikin ini sebagai cara gue automatisasi pembacaan spesifik file ini lho
+    but kalo mau handle empty string, bisa ditambah conditional dgn replace sebagai empty string
+    kalo row itu seharusnya string, atau ganti aja jadi 0 kalo itu int/float

@@ -1,0 +1,4 @@
+sate,soto,bubur,pizza,lasagna,kebab,risolGabungan makanan favorit dari kedua daftar:
+sate,soto,bubur,pizza,lasagna,kebab,risol
+Makanan yang sama dari dua daftar:
+soto,bubur

@@ -1,0 +1,22 @@
+1
+1
+Wisma Gaung
+3
+800000
+Dek depe
+2000000
+2
+Wisma Gaung
+3
+Asep
+3
+Dek depe
+4
+Asep
+4
+Dek depe
+-500000
+4
+Dek depe
+500000
+8

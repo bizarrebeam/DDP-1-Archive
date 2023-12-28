@@ -1,0 +1,2 @@
+Daftar Makanan 1: cupcake,katsu,perkedel,kwetiau
+Daftar Makanan 2: katsu,muffin,pempek,sushi

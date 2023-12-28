@@ -1,0 +1,28 @@
+ dataframe = read_csv("abalone.csv")
+
+    print("\n>>> Print the first 10 lines\n")
+    print(head(dataframe, top_n=10))
+
+    print("\n>>> Print dataframe information\n")
+    print(info(dataframe))
+
+    new_dataframe = select_rows(dataframe, "Length", ">", 0.49)
+    print("\n>>> Return a new dataframe, with column Length > 0.49\n")
+    print(head(new_dataframe, top_n=5))
+
+    new_2nd_dataframe = select_rows(select_rows(dataframe, "Length", ">", 0.49), "Sex", "==", "M")
+    print("\n>>> Return a new dataframe, where Sex == 'M' AND Length > 0.49\n")
+    print(head(new_2nd_dataframe, top_n=5))
+
+    new_3rd_dataframe = select_cols(dataframe, ["Sex", "Length", "Diameter", "Rings"])
+    print("\n>>> Return a new dataframe, only the Sex, Length, Diameter, and Rings columns\n")
+    print(head(new_3rd_dataframe, top_n=5))
+
+    print("\n>>> Calculate the mean in the Length column (in the original dataframe)\n")
+    print(mean_col(dataframe, "Length"))
+
+    print("\n>>> Unique values in the Sex column, and the frequency of their occurrence (in the original dataframe)\n")
+    print(count(dataframe, "Sex"))
+
+    print("\n>>> Display 'Height' and 'Diameter' column's scatter plot\n")
+    scatter(dataframe, "Height", "Diameter")

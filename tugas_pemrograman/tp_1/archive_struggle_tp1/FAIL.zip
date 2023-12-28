@@ -1,0 +1,134 @@
+import turtle
+import random
+import math
+from tkinter import * 
+from tkinter import messagebox
+
+# Initial set
+mario = turtle.Turtle()
+
+# Asking user how many towers they want to build
+amount_of_tower = mario.textinput("Build the tower!", "Enter" 
+                                "the amount of tower you want "
+                                " to build (integer)")
+if amount_of_tower.isdigit():
+    amount_of_tower = int(amount_of_tower)
+
+    # If user choose to build more than one tower
+    if amount_of_tower > 1:
+        tower_distance = int(mario.textinput("Enter the distance "
+                                        "between each tower (integer)"))
+        
+        # Asking user the distance between each tower
+        if tower_distance.isdigit():
+            if tower_distance < 2 or tower_distance > 5:
+                messagebox.showinfo("Invalid input!", "Input value "
+                            "must be between 2 and 5. Please "
+                            "provide a valid input.")
+        else:
+            messagebox.showinfo("Invalid input!", "Input value "
+                            "must be a positive integer. Please "
+                            "provide a valid input." )
+                            
+        
+        # Asking user the differences between each tower's layer
+        delta_of_layer = mario.textinput("Enter the number "
+                                        "of layer differences "
+                                        "between each tower "
+                                        "(integer)")
+        if delta_of_layer.isdigit():
+            delta_of_layer = int(delta_of_layer)
+
+            if delta_of_layer < 2 or delta_of_layer > 5:
+                messagebox.showinfo("Invalid input!", "Input value "
+                        "must be between 2 and 5. Please "
+                        "provide a valid input." )
+            else:
+                messagebox.showinfo("Invalid input!", "Input value "
+                            "must be a positive integer. Please "
+                            "provide a valid input." )
+else:
+        messagebox.showinfo("Invalid input!", "Input value "
+                            "must be a positive integer. "
+                            "Please provide a valid input." )
+    
+
+# Asking user the length of each brick    
+height_of_brick = mario.textinput("Modify your brick!", 
+                                        "Enter the height of "
+                                        "the brick (integer)")
+if height_of_brick.isdigit():
+    height_of_brick = int(height_of_brick)
+    
+    if height_of_brick > 35:
+        messagebox.showinfo("Invalid input!", "The maximum  "
+                            "value is 25. Please "
+                            "provide a valid input." )
+    elif height_of_brick < 0:
+        messagebox.showinfo("It's too much...", "Input value "
+                            "must be 1 or greater. Please "
+                            "re-enter the input." )
+else:
+    messagebox.showinfo("Invalid input!", "Input value "
+                            "must be a positive integer. "
+                            "Please provide a valid input." )
+
+# Asking user the width of each brick
+width_of_brick = int(mario.textinput("Modify your brick!", 
+                                        "Enter the width of "
+                                        "the brick (integer)"))
+if width_of_brick.isdigit():
+    if width_of_brick > 35:
+        messagebox.showinfo("It's too much...", "The maximum  "
+                            "value is 25. Please "
+                            "re-enter the input." )
+    elif width_of_brick < 0:
+        messagebox.showinfo("Invalid input!", "Input value "
+                            "must be 1 or greater. Please "
+                            "provide a valid input." )
+else:
+        messagebox.showinfo("Invalid input!", "Input value "
+                            "must be a positive integer. "
+                            "Please provide a valid input." )
+
+# Asking user the amount of layer for the first (initial) tower
+first_tower_layer = int(mario.textinput("The first tower!", 
+                                        "Enter the amount "
+                                        "of layer for the "
+                                        "first tower (integer)"))
+if first_tower_layer.isdigit():
+    if int(first_tower_layer) > 25:
+        messagebox.showinfo("It's too much...", "The maximum  "
+                            "brick is 25. Please "
+                            "re-enter the input." )
+    elif int(first_tower_layer) < 0:
+        messagebox.showinfo("Invalid input!", "Input value "
+                            "must be 1 or greater. Please "
+                            "provide a valid input." )
+else:
+        messagebox.showinfo("Invalid input!", "Input value "
+                            "must be a positive integer. "
+                            "Please provide a valid input." )
+        
+# Asking user the length of brick layer
+width_of_layer = (int(mario.textinput("Length of the layer!",
+                                        "Enter the length of "
+                                        "the layer (integer)")))
+if width_of_layer.isdigit():
+    if int(width_of_layer) > 25:
+        messagebox.showinfo("It's too much...", "The maximum  "
+                            "width is 10 bricks. Please "
+                            "re-enter the input." )
+    elif int(width_of_layer) < 0:
+        messagebox.showinfo("Invalid input!", "Input value "
+                            "must be 1 or greater. Please "
+                            "provide a valid input." )
+else:
+        messagebox.showinfo("Invalid input!", "Input value "
+                            "must be a positive integer. "
+                            "Please provide a valid input." )
+
+
+        
+
+   

@@ -1,0 +1,22 @@
+B. Kemampuan program saya dari skala 1--5 adalah 2.
+
+Alasan saya memilih skala 2 adalah saya telah memiliki pemahaman mengenai alur 
+belajar dan apa yang akan saya pelajari dalam pemrograman Python, dan saya sudah 
+familiar dengan istilah-istilah ataupun struktur materi yang akan saya pelajari 
+ke depannya dalam matkul Dasar-Dasar Pemrograman 1 di Fasilkom.
+
+Namun saya belum merasa saya mampu untuk memecahkan masalah secara lancar, 
+baik itu masalah yang berkaitan dengan komputasi ataupun mengimplementasikan
+langsung pemahaman saya tentang Python melalui proyek nyata. Sedangkan, 
+pemrograman membutuhkan banyak latihan secara langsung, bukan hanya tentang 
+seberapa banyak materi yang saya ketahui.
+
+Saya harap, melalui Fasilkom UI melatih saya untuk terbiasa mengimplementasikan
+dan memecahkan permasalahan secara langsung, sesederhana apapun itu, menggunakan
+pengetahuan pemrograman yang telah saya punya.
+
+C. Dengan demikian, ekpektasi saya Asisten Dosen di kelas DDP 1 A dapat
+merespon atau menampung pertanyaan-pertanyaan saya dalam membantu menghadapi 
+kebingungan memecahkan dan menyelesaikan tugas-tugas pemrograman, dengan harapan 
+saya dapat menyelesaikan lebih banyak tantangan ke depannya dengan lancar dan 
+meningkatkan skala kemampuan program saya menjadi maksimal. 

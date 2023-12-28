@@ -1,0 +1,25 @@
+1
+1
+Hotel Ceria
+4
+800000
+Asep
+1500000
+1
+2
+Hotel Ceria
+3
+Asep
+4
+Asep
+500000
+5
+Asep
+Hotel Ceria
+2
+6
+Hotel Ceria
+7
+Asep
+0
+8

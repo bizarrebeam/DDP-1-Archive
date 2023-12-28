@@ -1,0 +1,2 @@
+xml_file = '<putusan amar="pidana" amar_lainnya="pidana-penjara-waktu-tentu" id="ffe0b7f8e3efe7848a378119f00c02af" klasifikasi="pidana-khusus" lama_hukuman="90" lembaga_peradilan="pn-cibinong" provinsi="jabar" status="berkekuatan-hukum-tetap" sub_klasifikasi="narkotika-dan-psikotropika" url="https://putusan3.mahkamahagung.go.id/direktori/putusan/ffe0b7f8e3efe7848a378119f00c02af.html">'
+xml_content =  xml_content = xml_file.split(f"<{section}>")[1].split(f"</{section}>")[0]

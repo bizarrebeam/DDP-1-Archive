@@ -1,0 +1,42 @@
+python search.py all "barang bukti berupa 1 satu buah laptop"
+python search.py fakta "kebakaran hutan"
+python search.py fakta "kebakaran hutan" ANDNOT "pohon acasia"
+python search.py fakta "kebakaran hutan" OR "narkotika gol onga"
+python search.py tes
+python search.py fakta "narkoba" DAN "korupsi"
+python search.py fakta "korupsi"
+python search.py all "korupsi"
+python search.py kepala_putusan "kebakaran hutan" ANDNOT "hutan"
+python search.py pertimbangan_hukum "kebakaran hutan" AND "pidana"
+python search.py fakta "menteri"
+
+
+slicing itu penggunaannya gimana, trs di kode lu gunainnya gimana dan buat apa
+Gimana cara akses file di direktori?
+pop up questions (kalo pake code)
+os fungsinya apa
+os.lisdir buat apa, trs kenapa pake yang itu, karna os jenisnya ada banyak selain listdir
+cara kerja os listdir itu gimana
+= dia ngebuka satu folder dl nah nanti dia bakal ngeloop untuk ngebuka file didalemnya satu satu,  trs lanjut ke folder lainnya kalo ada
+encoding=‘utf-8’ itu apa
+
+Keyword Bahaya itu kalau berbahaya masuk ke keyword ga
+= masukk
+
+lebih banyak mana output dari yang di cari “bahaya” atau “berbahaya”
+= lebih banyak bahaya, karena kan berbahaya juga kata kuncinya itu di bahayanya, dan dia cuma ada bernya aja 
+
+Slicing tolong jelasin sama soal contoh dari dia suruh nebak output
+pop up questions 
+cara kerja slicing gimana
+= misal bisa pake for in range ()
+= bisa pakai list comprehension misalnya dari list angka, cm mau angka kuadratnya
+= bisa pake slicing strings kaya .split (jd list of string)
+= bisa reverse kalo pake negative
+
+Kenapa durasi file buat keyword 2 lebih cepat drpd keyword 1
+= berhubungan dengan hardware dari komputernya, dipengaruhi oleh RAM
+
+Perbedaan .find sama in
+= .find untuk string, find(substr, start, end), kalo substr ketemu return index first occurence, kalo ga returns -1
+= in utk iterable types kaya str, list, tuple, set, buat check apakah target value ada di iterable, return boolean

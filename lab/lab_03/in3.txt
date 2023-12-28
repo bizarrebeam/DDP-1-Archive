@@ -1,0 +1,2 @@
+Daftar Makanan 1: SaTe,soto,bubur,satE,sOto
+Daftar Makanan 2: piZZA,lasagna,kebab,bubur,piZzA,risol,soTo

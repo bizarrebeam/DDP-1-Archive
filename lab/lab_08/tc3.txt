@@ -1,0 +1,57 @@
+3
+2
+Hotel A
+1
+10000
+Hotel B
+2
+10000
+Hotel C
+3
+10000
+Pak Cil
+20000
+Bu Cil
+20000
+6
+Hotel A
+7
+Pak Cil
+5
+Pak C
+5
+Pak Cil
+Argonda
+5
+Pak Cil
+Hotel A
+-2
+5
+Pak Cil
+Hotel A
+10
+5
+Pak Cil
+Hotel A
+1
+6
+Hotel A
+5
+Bu Cil
+Hotel A
+1
+5
+Pak Cil
+Hotel B
+1
+5
+Bu Cil
+Hotel B
+1
+6
+Hotel B
+7
+Pak Cil
+7
+Bu Cil
+8

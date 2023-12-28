@@ -1,0 +1,12 @@
+Daftar makanan pertama:
+cupcake,katsu,perkedel,kwetiau
+
+Daftar makanan kedua:
+katsu,muffin,pempek,sushi
+
+Gabungan makanan favorit dari kedua daftar:
+cupcake,katsu,perkedel,kwetiau,muffin,pempek,sushi
+
+Makanan yang sama dari dua daftar:
+katsu
+
